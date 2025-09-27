@@ -18,6 +18,7 @@ print("C) Heavy (18 credits)")
 # Input value for the course loads
 choice = input("Your choice: ")
 
+#If/Elif/Else statements used for test case  number two.
 if choice == "A":
     print("You have chosen the light course load otion")
 
@@ -71,6 +72,7 @@ print("Options: Programming, Math, English, History")
 study_choice = input("Enter your choice: ")
 study_options = ["Programming", "Math", "English", "History"]
 
+#Membership operator used for test case number three
 if study_choice in study_options:
     print(f"You chose to study {study_choice} this choice increases your gpa by striving for academic excellence")
     current_gpa += .2
@@ -95,6 +97,9 @@ chancellors_list = 3.75
 deans_list = 3.25
 stress_limit = 55
 
+
+#Ai was used to check the syntax of this segment of code to ensure that the code is functional with different decisions being made.
+#Nested if statements used for complexity of code
 if current_gpa >= chancellors_list:
     if stress_level <= 45:
         if social_points >=35:
@@ -119,7 +124,7 @@ else:
     else:
         print("Your academics are low, your social points are low, and your stress is relatively high you are bound to be placed on academic probation.")
 
-
+#identity operator for test case number four
 if stress_level is stress_limit:
     print("You've reached the limit for your stress and have reached burnout.")
 elif stress_level is not stress_limit:
@@ -129,4 +134,5 @@ print("Final Stats:")
 print(f"GPA: {current_gpa:.2f}")
 print(f"Study hours: {study_hours}")
 print(f"Social points: {social_points}")
+
 print(f"Stress level: {stress_level}")
